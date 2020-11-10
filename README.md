@@ -46,12 +46,13 @@ calc = SimpleCalc()
 ```
 6. We can then create testing functions. 
 **IMPORTANT - we must use test word in our functions os our python interpreter knows what we are testing**
+* We can use other methods than ```AssertEqual``` to meet the testing needs.
 ```python
     def test_add(self):
         self.assertEqual(self.calc.add(2, 4), 6)  # Boolean
         # We are asking python to test/check if 2 + 4 =6. If True, passes the test, otherwise fails.
 
-    # We can repeat this for subtract
+    # We can repeat this for subtract:
     def test_subtract(self):
         # Tests if 6-4=2. If True, pass. If False, fail
         self.assertEqual(self.calc.subtract(6, 4), 2)  # Boolean
@@ -102,4 +103,4 @@ We can run tests a number of ways. We can either run the test file, or use the f
 * pytest looks for files with ```test_*.py``` and ```_test*.py```
 * ```-v``` is for verbose flag. 
 
-* We can use other conditions than AssertEqual to meet the testing needs. 
+ 
